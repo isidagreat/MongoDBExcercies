@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>THE QUOTES</title>
+    </head>
+    <body>
+        <h1>Here are Awesome Quotes</h1>
+        <% for (var i = msg.length -1 ; i> msg.length -4 ; i--) { %>
+            <p>'<%= msg[i].quote %>'</p>
+            <p>- <%= msg[i].name %> at <%= msg[i].created %></p>
+            <% } %>
+        
+    </body>
+</html>
