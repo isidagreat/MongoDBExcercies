@@ -11,6 +11,13 @@
         <input type='password' name='password'>
         <input type="submit">
     </form>
+<!-- <%- JSON.stringify(messages) %>  -->
+<!-- based on the structure of your messages, determine how to display them -->
+<% if(messages.registration) { %>
+     <% for (var x of messages.registration) { %>
+      <h3><%= x %></h3>
+     <% } %>
+ <% } %>
     <h1>Register Here</h1>
     <form method='post' action='/register'>
         <label>First Name</label>
